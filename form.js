@@ -12,7 +12,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: true });
 const textParser = bodyParser.text({ type: '*/*' });
 
 const registrationKey = 'be6202d6-1e7a-4634-b989-305dec78a81a';
-const formUrl = 'https://wt-2117b4787cc0e883d5d156f357f376fa-0.run.webtask.io/form/show?formUrl=https://s3-us-west-2.amazonaws.com/tporter-test/form.html&registrationKey=5b5cc119-cc15-49f9-b33e-38f75419b3e3';
+const formUrl = 'https://s3-us-west-2.amazonaws.com/tporter-test/form.html&registrationKey=5b5cc119-cc15-49f9-b33e-38f75419b3e3';
 
 const generateSignedUrl = (requestUrl, requestBody, registrationKey) => {
     const requestTimestamp = new Date().toISOString();
