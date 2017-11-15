@@ -11,8 +11,8 @@ const rp = require('request-promise');
 const urlencodedParser = bodyParser.urlencoded({ extended: true });
 const textParser = bodyParser.text({ type: '*/*' });
 
-const registrationKey = '<Media Shuttle Metadata Registration Key>';
-const formUrl = '<URL to HTML document with form>';
+const registrationKey = 'be6202d6-1e7a-4634-b989-305dec78a81a';
+const formUrl = 'https://wt-d0dc3f034baa7ae52c97b686cca207de-0.run.webtask.io/metadata';
 
 const generateSignedUrl = (requestUrl, requestBody, registrationKey) => {
     const requestTimestamp = new Date().toISOString();
