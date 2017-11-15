@@ -12,7 +12,7 @@ const urlencodedParser = bodyParser.urlencoded({ extended: true });
 const textParser = bodyParser.text({ type: '*/*' });
 
 const registrationKey = 'be6202d6-1e7a-4634-b989-305dec78a81a';
-const formUrl = 'https://wt-2117b4787cc0e883d5d156f357f376fa-0.run.webtask.io/form';
+const formUrl = 'https://github.com/signiantTseng/Metadata/blob/master/form.html';
 
 const generateSignedUrl = (requestUrl, requestBody, registrationKey) => {
     const requestTimestamp = new Date().toISOString();
